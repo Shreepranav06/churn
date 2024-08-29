@@ -1,7 +1,7 @@
-joblib
 scikit-learn
-tensorflow
 uvicorn
-streamlit
 numpy
-
+streamlit
+tensorflow
+pandas
+joblib
