@@ -1,4 +1,5 @@
 tensorflow==2.16.1
 numpy
 requests
+scikit-learn
 streamlit == 1.38.0
