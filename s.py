@@ -1,9 +1,20 @@
 import streamlit as st
 import numpy as np
 from tensorflow.keras.models import load_model
+import requests
+import tempfile
+
+# Download the model file from GitHub
+model_url = "https://github.com/Shreepranav06/churn/raw/main/model2.h5"  # Use raw link to directly download
+response = requests.get(model_url)
+
+# Save the model to a temporary file
+with tempfile.NamedTemporaryFile(delete=False, suffix=".h5") as temp_file:
+    temp_file.write(response.content)
+    model_path = temp_file.name
 
 # Load the trained model
-model2 = load_model(r"C:\Users\91978\Downloads\model2.h5")
+model2 = load_model(model_path)
 
 # Streamlit app title
 st.title("Telecom Churn Prediction")
