@@ -1,5 +1,3 @@
 tensorflow
-joblib
-requests
 scikit-learn
 streamlit
