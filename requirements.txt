@@ -1,7 +1,1 @@
-scikit-learn
-uvicorn
-numpy
-streamlit
-tensorflow
-pandas
-joblib
+
