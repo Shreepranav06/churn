@@ -5,7 +5,7 @@ import requests
 import tempfile
 
 # Download the model file from GitHub
-model_url = "https://github.com/Shreepranav06/churn/raw/main/model2.h5"  # Use raw link to directly download
+model_url = "https://github.com/Shreepranav06/churn/raw/main/m.h5"  # Use raw link to directly download
 response = requests.get(model_url)
 
 # Save the model to a temporary file
