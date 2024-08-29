@@ -5,8 +5,8 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load the trained model and scaler
-model = load_model(r'mode.h5')
-scaler = joblib.load(r'scale.pkl')
+model = load_model('mode.h5')
+scaler = joblib.load('scale.pkl')
 
 # Streamlit app title
 st.title("Telecom Churn Prediction")
